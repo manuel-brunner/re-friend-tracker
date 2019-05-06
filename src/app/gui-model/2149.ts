@@ -100,32 +100,6 @@ export class GuiModel {
                         }
                     ]
                 },
-				 {
-                    "id": "ActivityForm",
-                    "title": "Activity",
-                    "formFieldList": [{
-                            "id": "activity",
-                            "type": "autocomplete",
-                            "name": "Activity",
-							"url": "/activity"
-							"form": "ActivityForm"
-                            "width": 2,
-                            "required": true
-                        },
-                        {
-                            "type": "deleteButton",
-                            "name": "Delete"
-                        },
-                        {
-                            "type": "cancelButton",
-                            "name": "Cancel"
-                        },
-                        {
-                            "type": "okButton",
-                            "name": "Ok"
-                        }
-                    ]
-                },
                 {
                     "id": "AddActivityForm",
                     "title": "Activity",
@@ -247,7 +221,8 @@ export class GuiModel {
                             "page": "activitypage",
                         },
                     ]
-                },                {
+                },
+                {
                     "id": "friendspage",
                     "elementList": [{
                             "type": "backbutton",
@@ -267,45 +242,10 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "page": "friendpage"
-                        },
-                    ]
-                },
-				{
-                    "id": "friendpage",
-                    "elementList": [{
-                            "type": "backbutton",
-                        },
-                        {
-                            "type": "button",
-                            "name": "EditFriend",
-                            "icon": "fa-user",
-                            "color": "green",
                             "form": {
                                 "form": "FriendForm"
                             }
-							
-                        },{
-                        
-					"type": "button",
-                        "name": "AddActivity",
-                        "icon": "fa-calendar",
-                        "color": "yellow",
-                        "form": {
-                            "form": "ActivityForm"
-                        }
-                    },
-					
-					{
-                            "type": "list",
-                            "icon": "fa-calendar",
-                            "color": "blue",
-                            "search": true,
-                            "url": "/friend/:friendKey/activity",
-                            
-                        }
-					
-                        
+                        },
                     ]
                 },
                 {

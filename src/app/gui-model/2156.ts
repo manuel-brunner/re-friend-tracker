@@ -100,32 +100,6 @@ export class GuiModel {
                         }
                     ]
                 },
-				 {
-                    "id": "ActivityForm",
-                    "title": "Activity",
-                    "formFieldList": [{
-                            "id": "activity",
-                            "type": "autocomplete",
-                            "name": "Activity",
-							"url": "/activity"
-							"form": "ActivityForm"
-                            "width": 2,
-                            "required": true
-                        },
-                        {
-                            "type": "deleteButton",
-                            "name": "Delete"
-                        },
-                        {
-                            "type": "cancelButton",
-                            "name": "Cancel"
-                        },
-                        {
-                            "type": "okButton",
-                            "name": "Ok"
-                        }
-                    ]
-                },
                 {
                     "id": "AddActivityForm",
                     "title": "Activity",
@@ -247,7 +221,8 @@ export class GuiModel {
                             "page": "activitypage",
                         },
                     ]
-                },                {
+                },
+                {
                     "id": "friendspage",
                     "elementList": [{
                             "type": "backbutton",
@@ -284,28 +259,17 @@ export class GuiModel {
                             "form": {
                                 "form": "FriendForm"
                             }
-							
-                        },{
-                        
-					"type": "button",
-                        "name": "AddActivity",
-                        "icon": "fa-calendar",
-                        "color": "yellow",
-                        "form": {
-                            "form": "ActivityForm"
-                        }
-                    },
-					
-					{
+                        },
+                        {
                             "type": "list",
                             "icon": "fa-calendar",
-                            "color": "blue",
+                            "color": "yellow",
                             "search": true,
                             "url": "/friend/:friendKey/activity",
-                            
-                        }
-					
-                        
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        },
                     ]
                 },
                 {
