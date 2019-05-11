@@ -65,7 +65,7 @@ export class GuiModel {
                         {
                             "type": "okButton",
                             "name": "Ok"
-                        } {
+                        }, {
                             "id": "group",
                             "type": "autocomplete",
                             "name": "Group",
@@ -312,7 +312,7 @@ export class GuiModel {
                             "form": {
                                 "form": "GroupForm"
                             }
-                        } {
+                        }, {
                             "type": "list",
                             "icon": "fa-weixin",
                             "color": "wisteria",
@@ -323,7 +323,7 @@ export class GuiModel {
                             }
                         },
                     ]
-                } {
+                }, {
                     "id": "activitypage",
                     "elementList": [{
                         "type": "backbutton",
